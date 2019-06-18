@@ -64,17 +64,14 @@ class UserProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         SVProgressHUD.show()  // show spinner before run aysnc method
 
         // use Alamofire to call API asynchronously
-        AF.request(url, method: .get).responseJSON {
-            response in
+        AF.request(url, method: .get).responseJSON { response in
             SVProgressHUD.dismiss(withDelay: 1)  // dismiss spinner
             switch response.result {
             case let .success(value):
-//                print("Success, got user data \(value).")
                 let userJSON = JSON(value)
                 self.updateUserInfo(json: userJSON)
                 
             case let .failure(error):
-                print("Following error occured: \(error)")
                 SVProgressHUD.showError(withStatus: error.localizedDescription)
             }
         }
@@ -83,7 +80,6 @@ class UserProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     }
     
     // Parse JSON and update TableView
-    
     func updateUserInfo(json: JSON) {
         print(json)
         s1Textfields = []
@@ -93,12 +89,112 @@ class UserProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         tableView.reloadData()
     }
     
+    // Save btn clicked, send POST request
+    @objc func saveBtnPressed(_ sender: UIButton) {
+        sender.flash()
+        guard s1Textfields.count >= 3 else {
+            showAlert(title: "Get a User First", message: "Please use username to fetch a user profile first, then make changes.", buttonMessage: "OK")
+            return
+        }
+        switch sender.tag {
+        case 0:  // profile saveBtn
+            print("sending modify profile POST request...")
+            let cellFirst = tableView.cellForRow(at: IndexPath.init(row: 1, section: sender.tag)) as! MyCell
+            let cellLast = tableView.cellForRow(at: IndexPath.init(row: 2, section: sender.tag)) as! MyCell
+            let username = s1Textfields[0]
+            let firstName = cellFirst.textfield.text!
+            let lastName = cellLast.textfield.text!
+            if [username, firstName, lastName] == s1Textfields {  // check if there are changes made
+                showAlert(title: "No Change Made", message: "Did not detect any change since last time.", buttonMessage: "OK")
+            } else {
+                updateUserProfile(username, firstName, lastName)
+            }
+            
+        case 1:  // password saveBtn
+            print("sending change pin POST request...")
+            let username = s1Textfields[0]
+            let cellPin = tableView.cellForRow(at: IndexPath.init(row: 0, section: 1)) as! MyCell
+            let cellConfirm = tableView.cellForRow(at: IndexPath.init(row: 1, section: 1)) as! MyCell
+            let newPin = cellPin.textfield.text!
+            let pinConfirm = cellConfirm.textfield.text!
+            if newPin != pinConfirm {
+                showAlert(title: "Pins Not Identical", message: "Please double check you password and confirm to make sure they are identical.", buttonMessage: "OK")
+            } else {
+                updateUserPassword(username, newPin)
+            }
+            
+
+        default:
+            break
+        }
+    }
+    
+    // Update user profile
+    func updateUserProfile(_ username: String, _ firstName: String, _ lastName: String) {
+        let params: Parameters = [
+            "username": username,
+            "firstName": firstName,
+            "lastName": lastName
+        ]
+        
+        SVProgressHUD.show()  // show spinner before run aysnc method
+        AF.request(urlUpdateProfile, method: .post, parameters: params).responseData { response in
+            SVProgressHUD.dismiss(withDelay: 1)  // dismiss spinner
+            switch response.result {
+            case  .success:
+                SVProgressHUD.showSuccess(withStatus: "Your Profile Updated!")
+            case let .failure(error):
+                SVProgressHUD.showError(withStatus: error.localizedDescription)
+            }
+        }
+    }
+    
+    // Update user password (assume identity is already confirmed by JWT)
+    func updateUserPassword(_ username: String, _ newPin: String) {
+        let username = s1Textfields[0]
+        let cellPin = tableView.cellForRow(at: IndexPath.init(row: 0, section: 1)) as! MyCell
+        let cellConfirm = tableView.cellForRow(at: IndexPath.init(row: 1, section: 1)) as! MyCell
+        let newPin = cellPin.textfield.text!
+        let pinConfirm = cellConfirm.textfield.text!
+        // do some validation before update
+        if newPin != pinConfirm {
+            showAlert(title: "Pins Not Identical", message: "Please double check you password and confirm to make sure they are identical.", buttonMessage: "OK")
+        } else if newPin.count <= 6 {
+            showAlert(title: "Pin Too Short", message: "Please use a stronger password with numbers and letters combined.", buttonMessage: "OK")
+        } else {
+            let params: Parameters = [
+                "username": username,
+                "newPin": newPin
+            ]
+            
+            SVProgressHUD.show()  // show spinner
+            AF.request(urlUpdatePin, method: .post, parameters: params).responseData { response in
+                SVProgressHUD.dismiss(withDelay: 1)  // dismiss spinner
+                switch response.result {
+                case  .success:
+                    SVProgressHUD.showSuccess(withStatus: "You Password Updated!")
+                    cellPin.textfield.text = ""
+                    cellConfirm.textfield.text = ""
+                case let .failure(error):
+                    SVProgressHUD.showError(withStatus: error.localizedDescription)
+                }
+            }
+        }
+    }
     
     
+    // Show alert
+    func showAlert(title ti: String, message msg: String, buttonMessage btnMsg: String) {
+        let alert = UIAlertController(title: ti, message: msg, preferredStyle: .alert)
+        let action = UIAlertAction(title: btnMsg, style: .cancel, handler: nil)
+        
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
     
     // MARK: - TableView DataSource Method
     
-    // section, row numbers
+    // sections, row numbers
     func numberOfSections(in tableView: UITableView) -> Int {
         return sectionTitles.count
     }
@@ -107,7 +203,7 @@ class UserProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         return sectionLabels[section].count
     }
     
-    // section header
+    // header
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 40
     }
@@ -118,14 +214,14 @@ class UserProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         
         label.frame = CGRect(x: 10, y: 3, width: 180, height: 35)
         label.textColor = FlatNavyBlueDark()
-        label.text = sectionTitles[section]
+        label.text = sectionTitles[section]  // 0 -> BASIC INFO, 1 -> PASSWORD
         view.addSubview(label)
         view.backgroundColor = FlatWhite()
         
         return view
     }
     
-    // section footer
+    // footer
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 60
     }
@@ -133,7 +229,8 @@ class UserProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let view = tableView.dequeueReusableHeaderFooterView(withIdentifier:
             "sectionHeader") as! MyTableSectionFooter
-        view.saveBtn.setTitle(sectionTitles[section], for: .reserved)
+        view.saveBtn.tag = section  // assign section no. to saveBtn, 0 -> profile, 1 -> password
+        view.saveBtn.addTarget(self, action: #selector(saveBtnPressed), for: .touchUpInside)
         
         return view
     }
@@ -145,7 +242,12 @@ class UserProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         
         cell.label.text = sectionLabels[indexPath.section][indexPath.row]
         cell.textfield.placeholder = sectionPlaceholders[indexPath.section][indexPath.row]
-        if s1Textfields.count > 0 {
+        
+        if indexPath.section == 1 {  // password section, change text to •••••••
+            cell.textfield.textContentType = .password
+            cell.textfield.isSecureTextEntry = true
+        }
+        if s1Textfields.count > 0 && indexPath.section == 0 {  // if profile section && data source loaded, display
             cell.textfield.text = s1Textfields[indexPath.row]
         }
         
