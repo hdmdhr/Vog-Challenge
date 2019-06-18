@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ChameleonFramework
 
 class MyTableSectionFooter: UITableViewHeaderFooterView {
 
@@ -26,11 +27,12 @@ class MyTableSectionFooter: UITableViewHeaderFooterView {
         contentView.addSubview(saveBtn)
         
         // set background to transparent
-        contentView.backgroundColor = .red
+        contentView.backgroundColor = FlatRedDark()
         
         // center button in the middle
         saveBtn.setTitle("SAVE CHANGES", for: .normal)
-        saveBtn.tintColor = .white
+        saveBtn.tintColor = FlatWhite()
+        saveBtn.backgroundColor = FlatGrayDark()
         
         NSLayoutConstraint.activate([
             saveBtn.widthAnchor.constraint(equalToConstant: 180),
