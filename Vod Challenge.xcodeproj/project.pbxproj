@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5607FAA122B8A5FE00A2EBF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5607FAA022B8A5FE00A2EBF5 /* AppDelegate.swift */; };
+		5607FAA322B8A5FE00A2EBF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5607FAA222B8A5FE00A2EBF5 /* ViewController.swift */; };
+		5607FAA622B8A5FE00A2EBF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5607FAA422B8A5FE00A2EBF5 /* Main.storyboard */; };
+		5607FAA822B8A60000A2EBF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5607FAA722B8A60000A2EBF5 /* Assets.xcassets */; };
+		5607FAAB22B8A60000A2EBF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5607FAA922B8A60000A2EBF5 /* LaunchScreen.storyboard */; };
+		5607FAB622B8A60000A2EBF5 /* Vod_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5607FAB522B8A60000A2EBF5 /* Vod_ChallengeTests.swift */; };
+		5607FAC122B8A60000A2EBF5 /* Vod_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5607FAC022B8A60000A2EBF5 /* Vod_ChallengeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5607FAB222B8A60000A2EBF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5607FA9522B8A5FE00A2EBF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5607FA9C22B8A5FE00A2EBF5;
+			remoteInfo = "Vod Challenge";
+		};
+		5607FABD22B8A60000A2EBF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5607FA9522B8A5FE00A2EBF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5607FA9C22B8A5FE00A2EBF5;
+			remoteInfo = "Vod Challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5607FA9D22B8A5FE00A2EBF5 /* Vod Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vod Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5607FAA022B8A5FE00A2EBF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5607FAA222B8A5FE00A2EBF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5607FAA522B8A5FE00A2EBF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5607FAA722B8A60000A2EBF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5607FAAA22B8A60000A2EBF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5607FAAC22B8A60000A2EBF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5607FAB122B8A60000A2EBF5 /* Vod ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vod ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5607FAB522B8A60000A2EBF5 /* Vod_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vod_ChallengeTests.swift; sourceTree = "<group>"; };
+		5607FAB722B8A60000A2EBF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5607FABC22B8A60000A2EBF5 /* Vod ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vod ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5607FAC022B8A60000A2EBF5 /* Vod_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vod_ChallengeUITests.swift; sourceTree = "<group>"; };
+		5607FAC222B8A60000A2EBF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5607FA9A22B8A5FE00A2EBF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5607FAAE22B8A60000A2EBF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5607FAB922B8A60000A2EBF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5607FA9422B8A5FE00A2EBF5 = {
+			isa = PBXGroup;
+			children = (
+				5607FA9F22B8A5FE00A2EBF5 /* Vod Challenge */,
+				5607FAB422B8A60000A2EBF5 /* Vod ChallengeTests */,
+				5607FABF22B8A60000A2EBF5 /* Vod ChallengeUITests */,
+				5607FA9E22B8A5FE00A2EBF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5607FA9E22B8A5FE00A2EBF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5607FA9D22B8A5FE00A2EBF5 /* Vod Challenge.app */,
+				5607FAB122B8A60000A2EBF5 /* Vod ChallengeTests.xctest */,
+				5607FABC22B8A60000A2EBF5 /* Vod ChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5607FA9F22B8A5FE00A2EBF5 /* Vod Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				5607FAA022B8A5FE00A2EBF5 /* AppDelegate.swift */,
+				5607FAA222B8A5FE00A2EBF5 /* ViewController.swift */,
+				5607FAA422B8A5FE00A2EBF5 /* Main.storyboard */,
+				5607FAA722B8A60000A2EBF5 /* Assets.xcassets */,
+				5607FAA922B8A60000A2EBF5 /* LaunchScreen.storyboard */,
+				5607FAAC22B8A60000A2EBF5 /* Info.plist */,
+			);
+			path = "Vod Challenge";
+			sourceTree = "<group>";
+		};
+		5607FAB422B8A60000A2EBF5 /* Vod ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				5607FAB522B8A60000A2EBF5 /* Vod_ChallengeTests.swift */,
+				5607FAB722B8A60000A2EBF5 /* Info.plist */,
+			);
+			path = "Vod ChallengeTests";
+			sourceTree = "<group>";
+		};
+		5607FABF22B8A60000A2EBF5 /* Vod ChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5607FAC022B8A60000A2EBF5 /* Vod_ChallengeUITests.swift */,
+				5607FAC222B8A60000A2EBF5 /* Info.plist */,
+			);
+			path = "Vod ChallengeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5607FA9C22B8A5FE00A2EBF5 /* Vod Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5607FAC522B8A60000A2EBF5 /* Build configuration list for PBXNativeTarget "Vod Challenge" */;
+			buildPhases = (
+				5607FA9922B8A5FE00A2EBF5 /* Sources */,
+				5607FA9A22B8A5FE00A2EBF5 /* Frameworks */,
+				5607FA9B22B8A5FE00A2EBF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vod Challenge";
+			productName = "Vod Challenge";
+			productReference = 5607FA9D22B8A5FE00A2EBF5 /* Vod Challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5607FAB022B8A60000A2EBF5 /* Vod ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5607FAC822B8A60000A2EBF5 /* Build configuration list for PBXNativeTarget "Vod ChallengeTests" */;
+			buildPhases = (
+				5607FAAD22B8A60000A2EBF5 /* Sources */,
+				5607FAAE22B8A60000A2EBF5 /* Frameworks */,
+				5607FAAF22B8A60000A2EBF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5607FAB322B8A60000A2EBF5 /* PBXTargetDependency */,
+			);
+			name = "Vod ChallengeTests";
+			productName = "Vod ChallengeTests";
+			productReference = 5607FAB122B8A60000A2EBF5 /* Vod ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5607FABB22B8A60000A2EBF5 /* Vod ChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5607FACB22B8A60000A2EBF5 /* Build configuration list for PBXNativeTarget "Vod ChallengeUITests" */;
+			buildPhases = (
+				5607FAB822B8A60000A2EBF5 /* Sources */,
+				5607FAB922B8A60000A2EBF5 /* Frameworks */,
+				5607FABA22B8A60000A2EBF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5607FABE22B8A60000A2EBF5 /* PBXTargetDependency */,
+			);
+			name = "Vod ChallengeUITests";
+			productName = "Vod ChallengeUITests";
+			productReference = 5607FABC22B8A60000A2EBF5 /* Vod ChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5607FA9522B8A5FE00A2EBF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = littlebiteverything;
+				TargetAttributes = {
+					5607FA9C22B8A5FE00A2EBF5 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					5607FAB022B8A60000A2EBF5 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 5607FA9C22B8A5FE00A2EBF5;
+					};
+					5607FABB22B8A60000A2EBF5 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 5607FA9C22B8A5FE00A2EBF5;
+					};
+				};
+			};
+			buildConfigurationList = 5607FA9822B8A5FE00A2EBF5 /* Build configuration list for PBXProject "Vod Challenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5607FA9422B8A5FE00A2EBF5;
+			productRefGroup = 5607FA9E22B8A5FE00A2EBF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5607FA9C22B8A5FE00A2EBF5 /* Vod Challenge */,
+				5607FAB022B8A60000A2EBF5 /* Vod ChallengeTests */,
+				5607FABB22B8A60000A2EBF5 /* Vod ChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5607FA9B22B8A5FE00A2EBF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5607FAAB22B8A60000A2EBF5 /* LaunchScreen.storyboard in Resources */,
+				5607FAA822B8A60000A2EBF5 /* Assets.xcassets in Resources */,
+				5607FAA622B8A5FE00A2EBF5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5607FAAF22B8A60000A2EBF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5607FABA22B8A60000A2EBF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5607FA9922B8A5FE00A2EBF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5607FAA322B8A5FE00A2EBF5 /* ViewController.swift in Sources */,
+				5607FAA122B8A5FE00A2EBF5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5607FAAD22B8A60000A2EBF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5607FAB622B8A60000A2EBF5 /* Vod_ChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5607FAB822B8A60000A2EBF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5607FAC122B8A60000A2EBF5 /* Vod_ChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5607FAB322B8A60000A2EBF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5607FA9C22B8A5FE00A2EBF5 /* Vod Challenge */;
+			targetProxy = 5607FAB222B8A60000A2EBF5 /* PBXContainerItemProxy */;
+		};
+		5607FABE22B8A60000A2EBF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5607FA9C22B8A5FE00A2EBF5 /* Vod Challenge */;
+			targetProxy = 5607FABD22B8A60000A2EBF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5607FAA422B8A5FE00A2EBF5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5607FAA522B8A5FE00A2EBF5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5607FAA922B8A60000A2EBF5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5607FAAA22B8A60000A2EBF5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5607FAC322B8A60000A2EBF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5607FAC422B8A60000A2EBF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5607FAC622B8A60000A2EBF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R9528JTQVW;
+				INFOPLIST_FILE = "Vod Challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.littlebiteverything.Vod-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5607FAC722B8A60000A2EBF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R9528JTQVW;
+				INFOPLIST_FILE = "Vod Challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.littlebiteverything.Vod-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5607FAC922B8A60000A2EBF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R9528JTQVW;
+				INFOPLIST_FILE = "Vod ChallengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.littlebiteverything.Vod-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vod Challenge.app/Vod Challenge";
+			};
+			name = Debug;
+		};
+		5607FACA22B8A60000A2EBF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R9528JTQVW;
+				INFOPLIST_FILE = "Vod ChallengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.littlebiteverything.Vod-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vod Challenge.app/Vod Challenge";
+			};
+			name = Release;
+		};
+		5607FACC22B8A60000A2EBF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R9528JTQVW;
+				INFOPLIST_FILE = "Vod ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.littlebiteverything.Vod-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Vod Challenge";
+			};
+			name = Debug;
+		};
+		5607FACD22B8A60000A2EBF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R9528JTQVW;
+				INFOPLIST_FILE = "Vod ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.littlebiteverything.Vod-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Vod Challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5607FA9822B8A5FE00A2EBF5 /* Build configuration list for PBXProject "Vod Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5607FAC322B8A60000A2EBF5 /* Debug */,
+				5607FAC422B8A60000A2EBF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5607FAC522B8A60000A2EBF5 /* Build configuration list for PBXNativeTarget "Vod Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5607FAC622B8A60000A2EBF5 /* Debug */,
+				5607FAC722B8A60000A2EBF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5607FAC822B8A60000A2EBF5 /* Build configuration list for PBXNativeTarget "Vod ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5607FAC922B8A60000A2EBF5 /* Debug */,
+				5607FACA22B8A60000A2EBF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5607FACB22B8A60000A2EBF5 /* Build configuration list for PBXNativeTarget "Vod ChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5607FACC22B8A60000A2EBF5 /* Debug */,
+				5607FACD22B8A60000A2EBF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5607FA9522B8A5FE00A2EBF5 /* Project object */;
+}
