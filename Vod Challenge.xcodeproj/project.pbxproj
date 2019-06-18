@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		5607FAA122B8A5FE00A2EBF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5607FAA022B8A5FE00A2EBF5 /* AppDelegate.swift */; };
-		5607FAA322B8A5FE00A2EBF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5607FAA222B8A5FE00A2EBF5 /* ViewController.swift */; };
+		5607FAA322B8A5FE00A2EBF5 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5607FAA222B8A5FE00A2EBF5 /* UserProfileVC.swift */; };
 		5607FAA622B8A5FE00A2EBF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5607FAA422B8A5FE00A2EBF5 /* Main.storyboard */; };
 		5607FAA822B8A60000A2EBF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5607FAA722B8A60000A2EBF5 /* Assets.xcassets */; };
 		5607FAAB22B8A60000A2EBF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5607FAA922B8A60000A2EBF5 /* LaunchScreen.storyboard */; };
 		5607FAB622B8A60000A2EBF5 /* Vod_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5607FAB522B8A60000A2EBF5 /* Vod_ChallengeTests.swift */; };
 		5607FAC122B8A60000A2EBF5 /* Vod_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5607FAC022B8A60000A2EBF5 /* Vod_ChallengeUITests.swift */; };
+		5607FACF22B8B75300A2EBF5 /* MyTableSectionFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5607FACE22B8B75300A2EBF5 /* MyTableSectionFooter.swift */; };
+		5607FAD122B8BEB800A2EBF5 /* MyCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5607FAD022B8BEB800A2EBF5 /* MyCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		5607FA9D22B8A5FE00A2EBF5 /* Vod Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vod Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5607FAA022B8A5FE00A2EBF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5607FAA222B8A5FE00A2EBF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5607FAA222B8A5FE00A2EBF5 /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
 		5607FAA522B8A5FE00A2EBF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5607FAA722B8A60000A2EBF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5607FAAA22B8A60000A2EBF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		5607FABC22B8A60000A2EBF5 /* Vod ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vod ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5607FAC022B8A60000A2EBF5 /* Vod_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vod_ChallengeUITests.swift; sourceTree = "<group>"; };
 		5607FAC222B8A60000A2EBF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5607FACE22B8B75300A2EBF5 /* MyTableSectionFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableSectionFooter.swift; sourceTree = "<group>"; };
+		5607FAD022B8BEB800A2EBF5 /* MyCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				5607FAA022B8A5FE00A2EBF5 /* AppDelegate.swift */,
-				5607FAA222B8A5FE00A2EBF5 /* ViewController.swift */,
+				5607FAA222B8A5FE00A2EBF5 /* UserProfileVC.swift */,
+				5607FAD022B8BEB800A2EBF5 /* MyCellTableViewCell.swift */,
+				5607FACE22B8B75300A2EBF5 /* MyTableSectionFooter.swift */,
 				5607FAA422B8A5FE00A2EBF5 /* Main.storyboard */,
 				5607FAA722B8A60000A2EBF5 /* Assets.xcassets */,
 				5607FAA922B8A60000A2EBF5 /* LaunchScreen.storyboard */,
@@ -256,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5607FAA322B8A5FE00A2EBF5 /* ViewController.swift in Sources */,
+				5607FACF22B8B75300A2EBF5 /* MyTableSectionFooter.swift in Sources */,
+				5607FAD122B8BEB800A2EBF5 /* MyCellTableViewCell.swift in Sources */,
+				5607FAA322B8A5FE00A2EBF5 /* UserProfileVC.swift in Sources */,
 				5607FAA122B8A5FE00A2EBF5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,7 +450,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.littlebiteverything.Vod-Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -460,7 +468,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.littlebiteverything.Vod-Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
