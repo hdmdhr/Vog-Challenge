@@ -25,7 +25,7 @@ Database is MongoDB.
 
 ## Usage
 Use Xcode (10.0 above) to open `Vod Challenge.xcworkspace` file, run under `iPhone Xs Max` or `XR` simulator.
-<h1></h1>
+<br>
 ## In Action
 <img src="images/vog-iOS.gif" width="700"> <br>
 > JWT authentication feature is on the way. <br>
