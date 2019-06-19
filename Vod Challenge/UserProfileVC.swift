@@ -29,10 +29,12 @@ class UserProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     lazy var sectionPlaceholders: [[String]] = [s1Placeholders, s2Placeholders]
     lazy var sectionTextfields: [[String]] = [s1Textfields, s2Textfields]
     // urls
-    var urlGetUser = "http://localhost:3000/api.foo.com/profiles/"
-    let urlUpdateProfile = "http://localhost:3000/api.foo.com/profiles/update"
-    let urlUpdatePin = "http://localhost:3000/api.foo.com/password/change"
-    let urlNewUser = "http://localhost:3000/api.foo.com/new-user"
+//    let urlLocal = "http://localhost:3000/"
+    let urlRemote = "https://whispering-coast-70375.herokuapp.com/"
+    lazy var urlGetUser = urlRemote + "api.foo.com/profiles/"
+    lazy var urlUpdateProfile = urlRemote + "api.foo.com/profiles/update"
+    lazy var urlUpdatePin = urlRemote + "api.foo.com/password/change"
+    lazy var urlNewUser = urlRemote + "api.foo.com/new-user"
 
     // MARK: - APP LIFE CYCLE METHODS
     
@@ -48,6 +50,10 @@ class UserProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     
     @IBAction func btnGetUserPressed(_ sender: UIBarButtonItem) {
         let usernameCell = tableView.cellForRow(at: IndexPath.init(row: 0, section: 0)) as! MyCell
+        if usernameCell.textfield.text?.count == 0 {
+            showAlert(title: "Empty Username", message: "Please enter your username first and try again.", buttonMessage: "OK")
+            return
+        }
         
         view.endEditing(true)  // dismiss keyboard
         getUserByUsername(usernameCell.textfield.text!)
@@ -65,9 +71,14 @@ class UserProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
 
         // use Alamofire to call API asynchronously
         AF.request(url, method: .get).responseJSON { response in
-            SVProgressHUD.dismiss(withDelay: 1)  // dismiss spinner
+//            SVProgressHUD.dismiss(withDelay: 1)  // dismiss spinner
+
             switch response.result {
             case let .success(value):
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.75) {
+                    SVProgressHUD.dismiss()
+                    SVProgressHUD.showSuccess(withStatus: "User Info Retrieved.")
+                }
                 let userJSON = JSON(value)
                 self.updateUserInfo(json: userJSON)
                 
