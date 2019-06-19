@@ -41,17 +41,17 @@
 
 /* Begin PBXFileReference section */
 		0413717350224E2B67AD03E8 /* Pods_Vod_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vod_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5607FA9D22B8A5FE00A2EBF5 /* Vod Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vod Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5607FA9D22B8A5FE00A2EBF5 /* Vog Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vog Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5607FAA022B8A5FE00A2EBF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5607FAA222B8A5FE00A2EBF5 /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
 		5607FAA522B8A5FE00A2EBF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5607FAA722B8A60000A2EBF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5607FAAA22B8A60000A2EBF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5607FAAC22B8A60000A2EBF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5607FAB122B8A60000A2EBF5 /* Vod ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vod ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5607FAB122B8A60000A2EBF5 /* Vog ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vog ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5607FAB522B8A60000A2EBF5 /* Vod_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vod_ChallengeTests.swift; sourceTree = "<group>"; };
 		5607FAB722B8A60000A2EBF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5607FABC22B8A60000A2EBF5 /* Vod ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vod ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5607FABC22B8A60000A2EBF5 /* Vog ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vog ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5607FAC022B8A60000A2EBF5 /* Vod_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vod_ChallengeUITests.swift; sourceTree = "<group>"; };
 		5607FAC222B8A60000A2EBF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5607FACE22B8B75300A2EBF5 /* MyTableSectionFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableSectionFooter.swift; sourceTree = "<group>"; };
@@ -123,9 +123,9 @@
 		5607FA9E22B8A5FE00A2EBF5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5607FA9D22B8A5FE00A2EBF5 /* Vod Challenge.app */,
-				5607FAB122B8A60000A2EBF5 /* Vod ChallengeTests.xctest */,
-				5607FABC22B8A60000A2EBF5 /* Vod ChallengeUITests.xctest */,
+				5607FA9D22B8A5FE00A2EBF5 /* Vog Challenge.app */,
+				5607FAB122B8A60000A2EBF5 /* Vog ChallengeTests.xctest */,
+				5607FABC22B8A60000A2EBF5 /* Vog ChallengeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,9 +177,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5607FA9C22B8A5FE00A2EBF5 /* Vod Challenge */ = {
+		5607FA9C22B8A5FE00A2EBF5 /* Vog Challenge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5607FAC522B8A60000A2EBF5 /* Build configuration list for PBXNativeTarget "Vod Challenge" */;
+			buildConfigurationList = 5607FAC522B8A60000A2EBF5 /* Build configuration list for PBXNativeTarget "Vog Challenge" */;
 			buildPhases = (
 				1FF0B73F5A799BE102252E32 /* [CP] Check Pods Manifest.lock */,
 				5607FA9922B8A5FE00A2EBF5 /* Sources */,
@@ -191,14 +191,14 @@
 			);
 			dependencies = (
 			);
-			name = "Vod Challenge";
+			name = "Vog Challenge";
 			productName = "Vod Challenge";
-			productReference = 5607FA9D22B8A5FE00A2EBF5 /* Vod Challenge.app */;
+			productReference = 5607FA9D22B8A5FE00A2EBF5 /* Vog Challenge.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5607FAB022B8A60000A2EBF5 /* Vod ChallengeTests */ = {
+		5607FAB022B8A60000A2EBF5 /* Vog ChallengeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5607FAC822B8A60000A2EBF5 /* Build configuration list for PBXNativeTarget "Vod ChallengeTests" */;
+			buildConfigurationList = 5607FAC822B8A60000A2EBF5 /* Build configuration list for PBXNativeTarget "Vog ChallengeTests" */;
 			buildPhases = (
 				82A987E90DB45D21EFAE7E9A /* [CP] Check Pods Manifest.lock */,
 				5607FAAD22B8A60000A2EBF5 /* Sources */,
@@ -210,14 +210,14 @@
 			dependencies = (
 				5607FAB322B8A60000A2EBF5 /* PBXTargetDependency */,
 			);
-			name = "Vod ChallengeTests";
+			name = "Vog ChallengeTests";
 			productName = "Vod ChallengeTests";
-			productReference = 5607FAB122B8A60000A2EBF5 /* Vod ChallengeTests.xctest */;
+			productReference = 5607FAB122B8A60000A2EBF5 /* Vog ChallengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5607FABB22B8A60000A2EBF5 /* Vod ChallengeUITests */ = {
+		5607FABB22B8A60000A2EBF5 /* Vog ChallengeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5607FACB22B8A60000A2EBF5 /* Build configuration list for PBXNativeTarget "Vod ChallengeUITests" */;
+			buildConfigurationList = 5607FACB22B8A60000A2EBF5 /* Build configuration list for PBXNativeTarget "Vog ChallengeUITests" */;
 			buildPhases = (
 				7214CDFFD51AA06B575B8217 /* [CP] Check Pods Manifest.lock */,
 				5607FAB822B8A60000A2EBF5 /* Sources */,
@@ -229,9 +229,9 @@
 			dependencies = (
 				5607FABE22B8A60000A2EBF5 /* PBXTargetDependency */,
 			);
-			name = "Vod ChallengeUITests";
+			name = "Vog ChallengeUITests";
 			productName = "Vod ChallengeUITests";
-			productReference = 5607FABC22B8A60000A2EBF5 /* Vod ChallengeUITests.xctest */;
+			productReference = 5607FABC22B8A60000A2EBF5 /* Vog ChallengeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -257,7 +257,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5607FA9822B8A5FE00A2EBF5 /* Build configuration list for PBXProject "Vod Challenge" */;
+			buildConfigurationList = 5607FA9822B8A5FE00A2EBF5 /* Build configuration list for PBXProject "Vog Challenge" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -270,9 +270,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5607FA9C22B8A5FE00A2EBF5 /* Vod Challenge */,
-				5607FAB022B8A60000A2EBF5 /* Vod ChallengeTests */,
-				5607FABB22B8A60000A2EBF5 /* Vod ChallengeUITests */,
+				5607FA9C22B8A5FE00A2EBF5 /* Vog Challenge */,
+				5607FAB022B8A60000A2EBF5 /* Vog ChallengeTests */,
+				5607FABB22B8A60000A2EBF5 /* Vog ChallengeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -435,12 +435,12 @@
 /* Begin PBXTargetDependency section */
 		5607FAB322B8A60000A2EBF5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5607FA9C22B8A5FE00A2EBF5 /* Vod Challenge */;
+			target = 5607FA9C22B8A5FE00A2EBF5 /* Vog Challenge */;
 			targetProxy = 5607FAB222B8A60000A2EBF5 /* PBXContainerItemProxy */;
 		};
 		5607FABE22B8A60000A2EBF5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5607FA9C22B8A5FE00A2EBF5 /* Vod Challenge */;
+			target = 5607FA9C22B8A5FE00A2EBF5 /* Vog Challenge */;
 			targetProxy = 5607FABD22B8A60000A2EBF5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -637,7 +637,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vod Challenge.app/Vod Challenge";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vog Challenge.app/Vog Challenge";
 			};
 			name = Debug;
 		};
@@ -659,7 +659,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vod Challenge.app/Vod Challenge";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vog Challenge.app/Vog Challenge";
 			};
 			name = Release;
 		};
@@ -708,7 +708,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5607FA9822B8A5FE00A2EBF5 /* Build configuration list for PBXProject "Vod Challenge" */ = {
+		5607FA9822B8A5FE00A2EBF5 /* Build configuration list for PBXProject "Vog Challenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5607FAC322B8A60000A2EBF5 /* Debug */,
@@ -717,7 +717,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5607FAC522B8A60000A2EBF5 /* Build configuration list for PBXNativeTarget "Vod Challenge" */ = {
+		5607FAC522B8A60000A2EBF5 /* Build configuration list for PBXNativeTarget "Vog Challenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5607FAC622B8A60000A2EBF5 /* Debug */,
@@ -726,7 +726,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5607FAC822B8A60000A2EBF5 /* Build configuration list for PBXNativeTarget "Vod ChallengeTests" */ = {
+		5607FAC822B8A60000A2EBF5 /* Build configuration list for PBXNativeTarget "Vog ChallengeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5607FAC922B8A60000A2EBF5 /* Debug */,
@@ -735,7 +735,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5607FACB22B8A60000A2EBF5 /* Build configuration list for PBXNativeTarget "Vod ChallengeUITests" */ = {
+		5607FACB22B8A60000A2EBF5 /* Build configuration list for PBXNativeTarget "Vog ChallengeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5607FACC22B8A60000A2EBF5 /* Debug */,
