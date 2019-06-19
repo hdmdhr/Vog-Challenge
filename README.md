@@ -15,7 +15,7 @@
 An iOS single view mobile app. It connects to a self-built API to perform CRUD operations on a database. <br>
 App is created with Swift 5.0 and Xcode 10.
 API is created with node.js, deployed on Heroku.
-Database is MongoDB.
+Database is MongoDB Atlas.
 
 > API is deployed on heroku and can be accessed globally. <br>
 > To test: https://whispering-coast-70375.herokuapp.com/articles
@@ -24,7 +24,8 @@ Database is MongoDB.
 [**WiKi API**](https://github.com/hdmdhr/WiKi-RESTful-API) (just for reference, API is deployed online and no need to be downloaded to test the app)
 
 ## Usage
-Use Xcode (10.0 above) to open `Vod Challenge.xcworkspace` file, run under `iPhone Xs Max` or `XR` simulator.
+Use Xcode (10.0 above) to open `Vod Challenge.xcworkspace` file, run under `iPhone Xs Max` or `XR` simulator. <br>
+There are 4 users stored in database. Usernames are `hdmdhr`, `iOS User`, `vogvince`, and `saitmark`.
 <br>
 ## In Action
 <img src="images/vog-iOS.gif" width="700"> <br>
