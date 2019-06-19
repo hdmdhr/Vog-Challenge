@@ -13,24 +13,28 @@
 
 # User Tracker
 An iOS single view mobile app. It connects to a self-built API to perform CRUD operations on a database. <br>
-App is created with Swift 5.0 and Xcode 10.
-API is created with node.js, deployed on Heroku.
-Database is MongoDB Atlas.
+App is created with Swift 5.0 and Xcode 10. <br>
+API is created with node.js, deployed on Heroku. <br>
+Database is MongoDB Atlas. <br>
+
+
+
+## Work Together With - WiKi API (not wikipedia)
+[**WiKi API**](https://github.com/hdmdhr/WiKi-RESTful-API) (just for your reference, you don't need to downloaded to test the app because API is already deployed online)
 
 > API is deployed on heroku and can be accessed globally. <br>
 > To test: https://whispering-coast-70375.herokuapp.com/articles
-
-## Work Together With - WiKi API (not wikipedia)
-[**WiKi API**](https://github.com/hdmdhr/WiKi-RESTful-API) (just for reference, API is deployed online and no need to be downloaded to test the app)
 
 ## Usage
 Use Xcode (10.0 above) to open `Vod Challenge.xcworkspace` file, run under `iPhone Xs Max` or `XR` simulator. <br>
 There are 4 users stored in database. Usernames are `hdmdhr`, `iOS User`, `vogvince`, and `saitmark`.
 <br>
-## In Action
+## App In Action
 <img src="images/vog-iOS.gif" width="700"> <br>
-> JWT authentication feature is on the way. <br>
-> With this app, you can access user info through API by using username. Once user info displayed, you can update that user's profile, change/hash password. App also included a minimum input validation.
+* JWT authentication feature is on the way. <br>
+* With this app, you can access user info through API by using username. 
+* Once user info displayed, you can update that user's profile, change/hash password. 
+* App also included a minimum input validation.
 
 ## Author
 * **DongMing Hu** - [hdmdhr](https://github.com/hdmdhr)
