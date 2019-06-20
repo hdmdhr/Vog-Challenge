@@ -20,7 +20,7 @@ Database is MongoDB Atlas. <br>
 
 
 ## Work Together With - WiKi API (not wikipedia)
-[**WiKi API**](https://github.com/hdmdhr/WiKi-RESTful-API) (just for your reference, you don't need to downloaded to test the app because API is already deployed online)
+[**WiKi API**](https://github.com/hdmdhr/WiKi-RESTful-API) (just for your reference, you don't need to download to test the app because API is already deployed online)
 
 > API is deployed on heroku and can be accessed globally. <br>
 > To test: https://whispering-coast-70375.herokuapp.com/articles
